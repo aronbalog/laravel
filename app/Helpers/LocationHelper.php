@@ -60,8 +60,8 @@ class LocationHelper
     public function getSquareAroundPoint($lat, $lon, $distance)
     {
         return array(
-            self::getDestinationPoint($lat, $lon, $distance, 45),
-            self::getDestinationPoint($lat, $lon, $distance, 225),
+            $this->getDestinationPoint($lat, $lon, $distance, 45),
+            $this->getDestinationPoint($lat, $lon, $distance, 225),
         );
     }
 }
